@@ -1,0 +1,34 @@
+{
+  "id": "c5ffa9e5-90f7-4eb6-82bd-b5643145967c",
+  "name": "GithubBot",
+  "description": "Find interesting or trending projects, and start contributing!",
+  "default_flow": "Github",
+  "tags": [],
+  "flows": [
+    {
+      "name": "Github",
+      "description": "Search on github, display trending repos",
+      "commands": [],
+      "tags": []
+    }
+  ],
+  "files": [],
+  "functions": [
+    {
+      "name": "Github",
+      "description": null,
+      "args": [
+        "action=\"trending|search\"",
+        "language=\"python|java|...\"",
+        "period=\"week|month\"",
+        "query=\"\""
+      ],
+      "import_url": "https://github.com/CSML-by-Clevy/flows/raw/master/functions/github/github.zip?name=Github&handler=index.handler&args=action%3D%22trending%7Csearch%22%2Cperiod%3D%22week%7Cmonth%22%2Cquery%3D%22%22%2Clanguage%3D%22python%7Cjava%7C...%22&runtime=nodejs10.x",
+      "runtime": "nodejs10.x",
+      "handler": "index.handler",
+      "app_id": null,
+      "version": null
+    }
+  ],
+  "apps": []
+}
